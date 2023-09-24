@@ -43,7 +43,7 @@ const FeedbackForm = ({handleAdd}) => {
             {/* rating select component */}
             <RatingSelect select = {(rating) => {setRating(rating)}}/>
             <div className = "input-group">
-                <input style = {{backgroundColor: "#d9d9d9", color: "black"}} onChange = {handleTextChange} type = "text" placeholder = "Enter your review here..." value = {text}/> 
+                <input style = {{margin: "1px", borderRadius: "8px", backgroundColor: "#d9d9d9", color: "black"}} onChange = {handleTextChange} type = "text" placeholder = "Enter your review here..." value = {text}/> 
                 <Button type = "submit" isDisabled = {btnDisabled}> Submit </Button>
             </div>
             {message && <div className = "message"> {message} </div>}
