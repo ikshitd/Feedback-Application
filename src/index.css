@@ -142,6 +142,7 @@ input:focus {
   cursor: pointer;
   background: none;
   border: none;
+  color: white;
 }
 
 .edit {
