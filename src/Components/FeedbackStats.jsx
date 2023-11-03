@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types"; 
 import FeedbackContext from "../context/FeedbackContext"; 
 
-
 const FeedbackStats = () => {
 	const {feedback} = useContext(FeedbackContext); 
     const avg = feedback.reduce((acc, current) => {

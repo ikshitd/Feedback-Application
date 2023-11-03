@@ -13,14 +13,15 @@ import AboutIcon from './Components/AboutIcon';
 import {FeedbackProvider} from "./context/FeedbackContext"; 
 import FeedbackContext from "./context/FeedbackContext"; 
 //import {motion, AnimatePresence} from "framer-motion"; 
+//
 
-const  App = () => {
+const App = () => {
   return (
     <FeedbackProvider>
       <Router>
         <div> 
           <Header/> 
-          <Routes>
+          <Routes>  
             <Route path = '/' element = {
               <>
                 <FeedbackForm/>

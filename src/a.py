@@ -1,8 +1,9 @@
-for test in range(int(input())): 
-    n, k = map(int, input().split())
-for test in range(int(input())):
-    n, k= map(int, input().split())
-    a = [*map(int, input().split())]
-    for items in a: 
-        print(items)
-        
+for _ in range(int(input())): 
+	a = [*map(int, input().split())]
+	k = map(int, input().split())
+	if k in a: 
+		idx = a.find(k)
+		print(idx)
+	
+	else: 
+		print(-1)
