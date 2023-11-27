@@ -7,7 +7,7 @@ import RatingSelect from "./RatingSelect";
 import FeedbackContext from "../context/FeedbackContext";
 
 const FeedbackForm = () => {
-    const [text, setText] = useState("");  
+    const {text, setText} = useContext(FeedbackContext); 
     const [rating, setRating] = useState(10); 
     const [btnDisabled, setBtnDisabled] = useState(true); 
     const [message, setMessage] = useState("");

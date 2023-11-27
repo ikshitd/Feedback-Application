@@ -6,7 +6,7 @@ import FeedbackContext from "../context/FeedbackContext";
 const FeedbackStats = () => {
 	const {feedback} = useContext(FeedbackContext); 
     const avg = feedback.reduce((acc, current) => {
-        return (acc + current.rating); 
+        return (acc + +current.rating); 
     }, 0) / feedback.length; 
 
     return (<div className = "feedback-stats">
